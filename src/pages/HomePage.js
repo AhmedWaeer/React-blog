@@ -1,19 +1,26 @@
 
 import React from 'react'
 import Nav from '../component/Nav'
-import Hero from '../component/Hero'
+import Results from '../component/Results'
+import usePosts from '../Api/usePosts'
+import { useState, useEffect, useContext } from "react";
+
+const HomePage = () => {
 
 
 
-const HomePage = ()=> {
 
-  return(
-<div className="container mx-auto">
-   <Nav/>
-   <Hero/>
-  </div>
+  return (
+
+    <div className="container mx-auto">
+      <Nav />
+      <Results />
+
+    </div>
   )
 }
+
+
 
 
 
